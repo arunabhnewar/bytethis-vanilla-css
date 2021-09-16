@@ -31,8 +31,20 @@ body {
     background: #f0932b;
     border-color: #f0932b;
 }
-
-
+.section-title h3 {
+    margin-top: 60px;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+.section-title-underline {
+    width: 30px;
+    height: 4px;
+    background-color: #f0932b;
+    margin: 30px auto;
+}
 /*----navbar----------*/
 header {
     background-image: url(../image/bg-home.jpg);
@@ -78,4 +90,37 @@ nav {
     font-size: 3.5em;
     color: #fff;
     margin-bottom: 15px;
+}
+
+/*------services--------*/
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    place-items: center;
+    margin: auto;
+}
+.service-item {
+    display: flex;
+    padding: 5px 0px;
+}
+.service-icon i{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    color: #22a6b3;
+    margin-right: 30px;
+    transition: 0.4s linear;
+}
+.service-icon i:hover {
+    background: #2c3e50;
+}
+.service-item h3 {
+    color: #535c68;
+}
+.service-item p {
+    color: #535c68;
+    text-transform: uppercase;
+    font-weight: 500;
 }
