@@ -196,3 +196,44 @@ nav {
 }
 
 /*--------team-----------*/
+#team {
+    margin-top: 100px;
+}
+.team-title-underline {
+    width: 30px;
+    height: 4px;
+    background-color: #f0932b;
+    margin: 30px auto;
+}
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    margin: auto;
+}
+.team-member {
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+}
+.team-member-name {
+    color: #2c3e50;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.team-member-designation {
+    color: #535c68;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.social-list a{
+    color: #535c68;
+    padding: 0 4px;
+    transition: 0.4s linear;
+}
+.social-list a:hover {
+    color: #f0932b;
+}
