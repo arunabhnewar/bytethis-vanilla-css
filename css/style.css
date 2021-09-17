@@ -297,7 +297,7 @@ nav {
     text-transform: uppercase;
 }
 .pricing-card-lg {
-    padding: 85px 0;
+    padding: 80px 0;
     margin: 0;
     background-color: #22a6b3;
 }
@@ -308,3 +308,52 @@ nav {
 .pricing-card-lg .pricing-special p {
     color: #fff;
 }
+
+/*-----stats--------------*/
+#stats {
+    /* margin-top: 100px; */
+    background-image: url(../image/bg-stats.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 500px;
+}
+.stats-title-underline {
+    width: 30px;
+    height: 4px;
+    background-color: #f0932b;
+    margin: 30px auto;
+}
+.stats-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    min-height: 500px;
+}
+#stats .section-title h3 {
+    color: #fff;
+    padding-top: 50px;
+}
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 150px auto 0;
+}
+.stats-item {
+    text-align: center;
+}
+.stats-item i {
+    color: #f0932b;
+}
+.stats-item h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 15px 0 2px 0;
+}
+.stats-item p {
+    color: #fff;
+    margin-top: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/*----------contact------------*/
