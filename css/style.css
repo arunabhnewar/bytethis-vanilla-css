@@ -47,6 +47,13 @@ body {
     color: #2c3e50;
     text-transform: uppercase;
 }
+/*-----navigation menu------*/
+#nav-toggle, .nav-toggle-label {
+    display: none;
+}
+.nav-toggle-label i {
+    color: #fff;
+}
 
 /*----navbar----------*/
 header {
@@ -316,7 +323,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 500px;
+    min-height: 700px;
 }
 .stats-title-underline {
     width: 30px;
@@ -326,7 +333,7 @@ nav {
 }
 .stats-overlay {
     background: rgba(0, 0, 0, 0.7);
-    min-height: 500px;
+    min-height: 700px;
 }
 #stats .section-title h3 {
     color: #fff;
@@ -357,3 +364,179 @@ nav {
 }
 
 /*----------contact------------*/
+footer {
+    background-color: #222f3e;
+    border-top: 5px solid rgba(0, 0, 0, 0.1);
+    padding-top: 40px;
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    margin: auto;
+}
+#contact-details h3, #user-contact h3 {
+    color: #f0932b;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.address-title {
+    color: #f0932b;
+    font-weight: 400;
+}
+.address-title strong, #phone-fax-email strong {
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+#contact-details p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+#contact-info {
+    background-image: url(../image/world-map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fab{
+    color: #fff;
+    transition: 0.4s linear;
+    padding: 0 5px;
+}
+.fab:hover {
+    color: #f0932b;
+}
+#user-contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+input, textarea {
+    outline: 0;
+    border: 1px solid;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form .form-control {
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-weight: 300;
+}
+.btn-contact {
+    border-color: #fff;
+    color: #fff;
+}
+.btn-contact:hover {
+    background: #f0932b;
+    border-color: #f0932b;
+}
+
+/*------footer bottom-------*/
+#copyright {
+    margin-top: 60px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+}
+.copyright-container {
+    display: flex;
+    justify-content: space-between;
+}
+#footer-copyright p {
+    margin: 0;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+#footer-menu {
+    float: left;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 200;
+}
+#footer-menu ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+#footer-menu ul li{
+    display: inline-block;
+}
+#footer-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 0 10px;
+    transition: 0.3s linear;
+}
+#footer-menu ul li:hover a {
+    color: #f0932b;
+}
+
+/* ----navigation--------- */
+.navbar {
+    padding: 20px 0;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.vesco-top-nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+}
+.vesco-nav-wrapper {
+    padding: 0 85px;
+}
+.navbar-nav {
+    float: right;
+}
+.navbar-nav > li > a {
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background: none;
+  color: #34c6d3;
+}
+.navbar-toggle {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    border-radius: 0;
+  }
+  
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  
+  .navbar-collapse {
+    max-height: none !important;
+  }
+  
+  .vesco-top-nav ul.navbar-nav > li.active > a {
+    color: #34c6d3;
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #34c6d3;
+    color: #34c6d3;
+    padding: 10px 15px;
+    display: none;
+    transition: 0.3s linear;
+  }
+  .back-to-top:hover {
+    color: #fff;
+    background: #34c6d3;
+  }
