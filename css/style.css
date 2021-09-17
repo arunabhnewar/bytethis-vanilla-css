@@ -39,12 +39,7 @@ body {
     color: #2c3e50;
     text-transform: uppercase;
 }
-.section-title-underline {
-    width: 30px;
-    height: 4px;
-    background-color: #f0932b;
-    margin: 30px auto;
-}
+
 /*----navbar----------*/
 header {
     background-image: url(../image/bg-home.jpg);
@@ -98,7 +93,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
     place-items: center;
-    margin: auto;
+    margin: 0 auto 100px;
 }
 .service-item {
     display: flex;
@@ -118,9 +113,60 @@ nav {
 }
 .service-item h3 {
     color: #535c68;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+.services-title-underline {
+    width: 30px;
+    height: 4px;
+    background-color: #f0932b;
+    margin: 30px auto;
 }
 .service-item p {
     color: #535c68;
-    text-transform: uppercase;
-    font-weight: 500;
+
 }
+
+/*------about------------*/
+#about {
+    background-image: url(../image/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-container {
+    height: 700px;
+    clip-path: polygon(0 0, 43% 0, 53% 100%, 0 100%);
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.about-info {
+    width: 40%;
+}
+#about .section-title h3 {
+    text-align: left;
+}
+.about-title-underline {
+    margin-left: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #f0932b;
+}
+.about-info p {
+    color: #535c68;
+    padding-right: 50px;
+    margin-bottom: 35px;
+}
+.btn-about {
+    color: #22a6b3;
+}
+.btn-about:hover {
+    background-color: #22a6b3;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/*  */
