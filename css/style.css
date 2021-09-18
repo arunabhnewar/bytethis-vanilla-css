@@ -48,12 +48,15 @@ body {
     text-transform: uppercase;
 }
 /*-----navigation menu------*/
-#nav-toggle, .nav-toggle-label {
+#nav-toggle, .nav-toggle-label, .fas {
     display: none;
+
 }
 .nav-toggle-label i {
     color: #fff;
 }
+
+
 
 /*----navbar----------*/
 header {
@@ -69,9 +72,12 @@ nav {
     align-items: center; 
     height: 80px;
 }
+.nav-menu {
+    margin-left: 200px;
+}
 .nav-menu li {
     list-style: none;
-    display: inline-block;
+    display: inline-block;    
 }
 .nav-menu li a {
     text-decoration: none;

@@ -2,4 +2,61 @@
     .nav-toggle-label {
         display: block;
     }
+    .nav-menu {
+        width: calc(100% - 30px);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        z-index: 99;
+        margin: 0;
+        padding: 20px 0 20px 35px;
+        background: rgba(0, 0, 0,0.7);
+        transform-origin: top;
+        transform: translateY(-500px);
+        transition: 0.4s linear;
+    }
+    .nav-menu li {
+        display: block;
+        margin-top: 10px;
+    }
+    #nav-toggle:checked ~ .nav-menu {
+        transform: translateY(0px);
+    } 
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-info p {
+        padding-right: 0px;
+    }
+
+    .work-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #footer-menu {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .service-container, .work-container, .team-container, .pricing-container, .stats-container, .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .stats-container {
+        margin-top: 0;
+        grid-row-gap: 2em;
+    }
+    .about-container {
+        background-color: rgba(0, 0, 0,0.8);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .about-info {
+        width: 100%;
+        height: 400px;
+    }
+    .about-info p, .about-info h3 {
+        color: #CAD3C8;
+    }
 }
